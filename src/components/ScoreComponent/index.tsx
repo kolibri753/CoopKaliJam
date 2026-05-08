@@ -13,7 +13,7 @@ const ScoreComponent: React.FC<ScoreComponentProps> = ({
   return (
     <div className={`score__container ${score >= 0 ? "positive" : "negative"}`}>
       <p className="score__value">
-        <span className="score__level">{difficulty}: </span>
+        <span className="score__level">{Rune.t(difficulty)}: </span>
         {score}
       </p>
     </div>

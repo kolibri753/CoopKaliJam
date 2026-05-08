@@ -3,7 +3,7 @@ import "./styles.css";
 import {
   Difficulty,
   DifficultyTypes,
-  DifficultyDescriptions,
+  TuneNames,
 } from "../../types/DifficultyTypes";
 import ModalComponent from "../ModalComponent";
 import HelpButton from "../common/HelpButton";
@@ -39,7 +39,7 @@ const StartMenu: React.FC<StartMenuProps> = ({ onSelectDifficulty }) => {
   return (
     <div className="menu__container">
       <div className="menu__header">
-        <h2 className="menu__action">Choose Difficulty</h2>
+        <h2 className="menu__action">{Rune.t("Choose Difficulty")}</h2>
         <HelpButton onClick={handleHelp} />
       </div>
       <ul className="menu__list">
@@ -51,9 +51,9 @@ const StartMenu: React.FC<StartMenuProps> = ({ onSelectDifficulty }) => {
               }`}
               onClick={() => handleSelect(difficulty)}
             >
-              <span className="menu__title">{difficulty}</span>
+              <span className="menu__title">{Rune.t(difficulty)}</span>
               <p className="menu__description">
-                {DifficultyDescriptions[difficulty]}
+                {Rune.t(TuneNames[difficulty])}
               </p>
             </button>
           </li>
@@ -64,7 +64,7 @@ const StartMenu: React.FC<StartMenuProps> = ({ onSelectDifficulty }) => {
         onClick={handleStart}
         disabled={!selectedDifficulty}
       >
-        Start Game
+        {Rune.t("Start Game")}
       </button>
 
       {isHelpModalOpen && (
