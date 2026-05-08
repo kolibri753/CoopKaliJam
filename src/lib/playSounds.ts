@@ -1,12 +1,10 @@
-import { OnChangeAction } from "rune-games-sdk";
-import { GameActions } from "../logic";
 import { notesDistribution } from "../types/KalimbaNote";
 
 export default function playSounds(
-  action: OnChangeAction<GameActions> | undefined
+  action: { name: string; params: Record<string, unknown> } | undefined,
 ) {
   if (action?.name === "playNote") {
-    const noteName = action.params.noteName;
+    const noteName = action.params.noteName as string;
 
     if (!notesDistribution.includes(noteName)) {
       console.error("Note could not be determined");

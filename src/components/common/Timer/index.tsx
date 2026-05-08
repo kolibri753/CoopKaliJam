@@ -8,7 +8,7 @@ interface TimerProps {
 
 const Timer: React.FC<TimerProps> = ({ game }) => {
   const [seconds, setSeconds] = useState(0);
-  const [intervalId, setIntervalId] = useState<number | undefined>(undefined);
+  const [intervalId, setIntervalId] = useState<ReturnType<typeof setInterval> | undefined>(undefined);
 
   useEffect(() => {
     const id = setInterval(() => {

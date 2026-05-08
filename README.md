@@ -23,7 +23,7 @@ The 17-key Kalimba is divided in half for solo players, giving you 9 notes. Conv
 
 ## Where to Play?
 
-1. **Play Online:** [CoopKaliJam on Web](https://app.rune.ai/dev-pnHNxMHl) (Needs an update after Rune became Dusk)
+1. **Play Online:** [CoopKaliJam on Web](https://app.rune.ai/dev-pnHNxMHl)
 
 2. **Run in Rune App:** CoopKaliJam is available on the Rune app. Just open the Rune app, find `CoopKaliJam` and start playing! Alternatively, use the convenient [QR Code](https://join.rune.ai/game?g=0Q) 📱🎮
 

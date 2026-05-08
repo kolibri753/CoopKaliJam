@@ -1,4 +1,4 @@
-import type { RuneClient } from "rune-games-sdk/multiplayer";
+import type { RuneClient } from "rune-sdk";
 import { getTabsForDifficulty } from "./lib/getTabsForDifficulty";
 import { Difficulty } from "./types/DifficultyTypes";
 import { Tab } from "./types/Tab";
@@ -47,7 +47,7 @@ Rune.initLogic({
       score: 0,
       difficulty: null,
       tabs: [],
-      allPlayerIds: null || allPlayerIds,
+      allPlayerIds: allPlayerIds,
       playerKeys,
     };
   },
