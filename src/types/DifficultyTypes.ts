@@ -6,12 +6,12 @@ export const DifficultyTypes = {
   Creative: "Creative",
 } as const;
 
-export type Difficulty = typeof DifficultyTypes[keyof typeof DifficultyTypes];
+export type Difficulty = (typeof DifficultyTypes)[keyof typeof DifficultyTypes];
 
-export const DifficultyDescriptions: Record<Difficulty, string> = {
-  Easy: "🎉 Celebrate with a classic tune! 🎂",
-  Medium: "🔔 Ring in the holidays with a festive favorite! ❄️",
-  Hard: "🎵 Haunting melody echoing through the trees... 🌳",
-  Expert: "👊 Join the resistance with a powerful anthem! 🎵",
-  Creative: "🎨 Compose your own unique masterpiece! 🎼",
+export const TuneNames: Record<Difficulty, string> = {
+  Easy: '🎂 "Happy Birthday" a birthday classic',
+  Medium: '🔔 "Jingle Bells" a holiday favorite',
+  Hard: '🌲 "Forest Lullaby" a mysterious melody',
+  Expert: '✊ "Bella Ciao" an Italian anthem',
+  Creative: '🎨 "Free Play" just vibes!',
 };
